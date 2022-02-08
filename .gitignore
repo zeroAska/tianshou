@@ -149,3 +149,5 @@ MUJOCO_LOG.TXT
 *.hdf5
 wandb/
 videos/
+\#*\#
+*\~

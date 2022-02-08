@@ -1,0 +1,28 @@
+torso:
+  sensor: 0 # imu
+  out: 2  # torso state dim
+left_thigh_joint:
+  sensor: 1
+  out: 1
+left_thigh:
+  sensor: 0
+  out: 1
+left_shin_joint:
+  sensor: 1
+  out: 1
+left_shin: 
+  sensor: 0
+  out: 0
+right_thigh_joint:
+  sensor: 1
+  out: 1
+right_thigh:
+  sensor: 0
+  out: 1
+right_shin_joint:
+  sensor: 1
+  out: 1
+right_shin: 
+  sensor: 0
+  out: 0
+

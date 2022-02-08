@@ -1,0 +1,39 @@
+!!python/tuple [Link, torso]:
+  sensor: 5
+  out: 5
+!!python/tuple [Link, bthigh]:
+  sensor: 2
+  out: 2
+!!python/tuple [Link, bshin]:
+  sensor: 2
+  out: 2
+!!python/tuple [Link, bfoot]:
+  sensor: 2
+  out: 2
+!!python/tuple [Link, fthigh]:
+  sensor: 2
+  out: 2
+!!python/tuple [Link, fshin]:
+  sensor: 2
+  out: 2
+!!python/tuple [Link, ffoot]:
+  sensor: 2
+  out: 2
+state:
+  - [Link, torso]
+  - [Link, torso]
+  - [Joint, bthigh]
+  - [Joint, bshin]
+  - [Joint, bfoot]
+  - [Joint, fthigh]
+  - [Joint, fshin] 
+  - [Joint, ffoot]
+  - [Link , torso] 
+  - [Link, torso]
+  - [Link, torso]
+  - [Joint, bthigh]
+  - [Joint, bshin]
+  - [Joint, bfoot]
+  - [Joint, fthigh]
+  - [Joint, fshin ]
+  - [Joint, ffoot]

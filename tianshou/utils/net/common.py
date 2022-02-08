@@ -60,6 +60,9 @@ class MLP(nn.Module):
     ) -> None:
         super().__init__()
         self.device = device
+        #import pdb
+        #pdb.set_trace()
+        
         if norm_layer:
             if isinstance(norm_layer, list):
                 assert len(norm_layer) == len(hidden_sizes)
@@ -86,6 +89,7 @@ class MLP(nn.Module):
             model += [linear_layer(hidden_sizes[-1], output_dim)]
         self.output_dim = output_dim or hidden_sizes[-1]
         self.model = nn.Sequential(*model)
+        #pdb.set_trace()
 
     def forward(self, s: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
         if self.device is not None:
@@ -192,6 +196,8 @@ class Net(nn.Module):
         info: Dict[str, Any] = {},
     ) -> Tuple[torch.Tensor, Any]:
         """Mapping: s -> flatten (inside MLP)-> logits."""
+        import pdb
+        pdb.set_trace()
         logits = self.model(s)
         bsz = logits.shape[0]
         if self.use_dueling:  # Dueling DQN
